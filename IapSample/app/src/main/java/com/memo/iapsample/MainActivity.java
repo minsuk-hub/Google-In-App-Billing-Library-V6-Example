@@ -19,10 +19,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init(){
+        
         btn_nonconsumeable = this.findViewById(R.id.btn_nonconsumeable);
         btn_consumeable = this.findViewById(R.id.btn_consumeable);
         btn_subscription = this.findViewById(R.id.btn_subscription);
 
+
+        // 한번 구매하면 끝나는 상품 (예. 광고 제거)
         btn_nonconsumeable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        // 계속 구매 가능한 상품 (예. 코인, 다이아몬드)
         btn_consumeable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        // 정기 결제 화면
         btn_subscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

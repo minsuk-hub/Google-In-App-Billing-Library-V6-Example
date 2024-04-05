@@ -27,6 +27,7 @@ public class NonConsumable extends AppCompatActivity {
 
     private final String PRODUCT_PREMIUM = "lifetime";
     private final String NoAds = "NoAds";
+    
     private ArrayList<String> purchaseItemIDs = new ArrayList<String>() {{
         add(PRODUCT_PREMIUM);
         add(NoAds);
